@@ -5,10 +5,12 @@ import Write from "./pages/write/write";
 import Settings from "./Components/settings/settings";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
-import React from "react";
+import {Context} from "./contextApi/Context"
+import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+  const {user} = useContext(Context)
   return (
     <Router>
       <TopBar />
