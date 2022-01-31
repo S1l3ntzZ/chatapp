@@ -30,7 +30,7 @@ export default function Register() {
       <form action="" className="registerForm" onSubmit={handleSubmit}>
       <label>Username</label>
         <input
-          style={{textAlign:"center"}}
+          style={{textAlign:"center", height:"35px"}}
           autoComplete="true"
           type="text"
           placeholder="Insert your Username..."
